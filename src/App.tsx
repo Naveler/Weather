@@ -19,7 +19,7 @@ function App() {
       fetch(url)
       .then(response=>response.text())
       .then(data => (setResult(data)));
-    });
+    },()=>alert("cant access coordinates"));
   }, []);
   return (
     <div className="App">
